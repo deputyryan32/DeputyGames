@@ -81,6 +81,42 @@ main {
     font-size: 15px;
 }
 
+/* Tablet View */
+@media (max-width: 768px) {
+    .embed {
+        width: 80%; /* Adjust embed width for tablets */
+    }
+    header h1 {
+        font-size: 24px; /* Adjust header font size */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .embed {
+        width: 90%; /* Adjust embed width for smaller screens */
+    }
+    header h1 {
+        font-size: 20px; /* Smaller header for mobile */
+    }
+    .embed .content p {
+        font-size: 13px; /* Smaller text for mobile */
+    }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px; /* Even smaller header for very small screens */
+    }
+    .embed {
+        width: 100%; /* Full width on very small screens */
+    }
+    .embed .content p {
+        font-size: 12px; /* Smaller text for very small screens */
+    }
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: #000; /* Black background */
