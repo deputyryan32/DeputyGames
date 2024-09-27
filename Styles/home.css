@@ -9,22 +9,6 @@ body, html {
     box-sizing: border-box;
 }
 
-header {
-    padding: 20px;
-    background-color: #111;
-    color: #eaeaea;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #333;
-    z-index: 1000;
-}
-
-header img {
-    border-radius: 50%; /* Rounded logo */
-    max-width: 150px;
-    height: auto;
-}
-
 main {
     padding: 20px;
     padding-bottom: 80px; /* Ensure space above footer */
@@ -68,14 +52,4 @@ main {
     text-align: center;
     border-top: 1px solid #333;
     margin-top: 20px;
-}
-
-/* Mobile and Tablet Support */
-@media only screen and (max-width: 768px) {
-    body, html {
-        font-size: 14px;
-    }
-    header img {
-        max-width: 100px; /* Smaller logo for mobile */
-    }
 }
