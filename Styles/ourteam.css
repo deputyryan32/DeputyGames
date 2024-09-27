@@ -24,6 +24,21 @@ header {
     border-bottom: 1px solid #333;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .embed {
     width: 400px;
     background-color: #1f1f1f;
@@ -66,4 +81,29 @@ header {
     font-size: 15px;
 }
 
-/* Responsive styles can be added here */
+/* Navbar Styles */
+.navbar {
+    background-color: #000; /* Black background */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Vertical padding */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the nav links */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.nav-link {
+    color: #eaeaea; /* Light text color */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-link:hover {
+    background-color: #1f1f1f; /* Darker background on hover */
+}
+
+.nav-link.active {
+    background-color: #ff5722; /* Highlight color for the active link */
+}
