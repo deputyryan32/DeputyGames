@@ -1,34 +1,25 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar {
-    background-color: #111;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid #333;
+    background-color: #000; /* Black background */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Vertical padding */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the nav links */
+    z-index: 1000; /* Ensure it stays on top of other content */
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #61dafb;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 17px;
+.nav-link {
+    color: #eaeaea; /* Light text color */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
-.navbar a:hover {
-    background-color: #61dafb;
-    color: black;
+.nav-link:hover {
+    background-color: #1f1f1f; /* Darker background on hover */
 }
 
-.navbar a.active {
-    background-color: #04AA6D;
-    color: white;
+.nav-link.active {
+    background-color: #ff5722; /* Highlight color for the active link */
 }
