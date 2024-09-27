@@ -2,19 +2,31 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #000; /* Background color of the page */
-    color: #61dafb; /* Text color */
-    font-family: 'Courier New', Courier, monospace; /* Font family */
+    background: #000;
+    color: #61dafb;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     box-sizing: border-box;
 }
 
 header {
-    padding: 20px; /* Spacing for the header */
+    padding: 20px;
+    background-color: #111;
+    color: #eaeaea;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+}
+
+header img {
+    border-radius: 50%; /* Rounded logo */
+    max-width: 150px;
+    height: auto;
 }
 
 main {
-    padding: 80px 20px; /* Padding at the top to account for the fixed navbar */
+    padding: 20px;
     padding-bottom: 80px; /* Ensure space above footer */
 }
 
@@ -24,36 +36,36 @@ main {
 }
 
 .approval img {
-    max-width: 500px; /* Maximum width for approval image */
-    height: auto; /* Auto height for image */
+    max-width: 500px;
+    height: auto;
 }
 
 .buttons, .social-buttons {
-    margin: 20px 0; /* Margin for buttons sections */
+    margin: 20px 0;
 }
 
 .buttons a, .social-buttons a {
-    display: inline-block; /* Inline-block for button styling */
-    padding: 10px 20px; /* Button padding */
-    margin: 10px; /* Margin between buttons */
-    background-color: #111; /* Button background color */
-    color: #61dafb; /* Button text color */
-    text-decoration: none; /* No underline on buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    font-size: 16px; /* Button font size */
-    font-weight: bold; /* Bold button text */
-    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #111;
+    color: #61dafb;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .buttons a:hover, .social-buttons a:hover {
-    background-color: #61dafb; /* Change background on hover */
-    color: #000; /* Change text color on hover */
+    background-color: #61dafb;
+    color: #000;
 }
 
 .footer {
-    background-color: #111; /* Footer background color */
-    padding: 10px; /* Padding for footer */
-    text-align: center; /* Centered text */
-    border-top: 1px solid #333; /* Top border for footer */
-    margin-top: 20px; /* Margin for footer */
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 20px;
 }
