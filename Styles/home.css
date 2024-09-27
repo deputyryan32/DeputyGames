@@ -10,7 +10,7 @@ body, html {
 }
 
 main {
-    padding: 20px;
+    padding: 80px 20px; /* Added top padding equal to the navbar height */
     padding-bottom: 80px; /* Ensure space above footer */
 }
 

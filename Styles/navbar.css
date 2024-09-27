@@ -6,7 +6,7 @@ body {
 .navbar {
     background-color: #333;
     overflow: hidden;
-    position: fixed;
+    position: fixed; /* Keeps the navbar at the top */
     top: 0;
     width: 100%;
     z-index: 1000;
