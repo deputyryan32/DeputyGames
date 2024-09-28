@@ -85,6 +85,16 @@ p {
     margin-bottom: 30px; /* Space below paragraphs */
 }
 
+/* Approval logo styles */
+.approval {
+    margin: 30px 0; /* Added margin above and below */
+}
+
+.gg-logo {
+    width: 30px; /* Set width to 30px */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Button styles */
 .buttons, .social-buttons {
     margin: 20px 0;
