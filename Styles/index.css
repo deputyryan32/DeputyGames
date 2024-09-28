@@ -8,7 +8,6 @@ body, html {
     text-align: center;
     box-sizing: border-box;
 }
-
 header {
     padding: 20px;
     background-color: #111;
@@ -18,32 +17,26 @@ header {
     border-bottom: 1px solid #333;
     z-index: 1000;
 }
-
 header img {
-    border-radius: 50%; /* Rounded logo */
+    border-radius: 50%;
     max-width: 150px;
     height: auto;
 }
-
 main {
     padding: 20px;
-    padding-bottom: 80px; /* Ensure space above footer */
+    padding-bottom: 80px;
 }
-
 .approval {
     margin: 30px 0;
     text-align: center;
 }
-
 .approval img {
     max-width: 500px;
     height: auto;
 }
-
 .buttons, .social-buttons {
     margin: 20px 0;
 }
-
 .buttons a, .social-buttons a {
     display: inline-block;
     padding: 10px 20px;
@@ -56,12 +49,10 @@ main {
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .buttons a:hover, .social-buttons a:hover {
     background-color: #61dafb;
     color: #000;
 }
-
 .footer {
     background-color: #111;
     padding: 10px;
@@ -76,13 +67,13 @@ main {
         font-size: 14px;
     }
     header img {
-        max-width: 100px; /* Smaller logo */
+        max-width: 100px;
     }
     .approval img {
-        max-width: 300px; /* Smaller approval image */
+        max-width: 300px;
     }
     .buttons a, .social-buttons a {
-        font-size: 14px; /* Smaller buttons */
+        font-size: 14px;
         padding: 8px 16px;
     }
 }
@@ -90,13 +81,13 @@ main {
 /* Mobile Devices */
 @media only screen and (max-width: 480px) {
     header img {
-        max-width: 80px; /* Even smaller logo */
+        max-width: 80px;
     }
     .approval img {
-        max-width: 250px; /* Even smaller approval image */
+        max-width: 250px;
     }
     .buttons a, .social-buttons a {
-        font-size: 12px; /* Smaller buttons for mobile */
+        font-size: 12px;
         padding: 6px 12px;
     }
 }
