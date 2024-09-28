@@ -18,11 +18,13 @@ body, html {
     text-align: center;
 }
 
+/* Header styles */
 .header {
     border-bottom: 1px solid #E2E8F0;
     background-color: #222;
 }
 
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -68,64 +70,35 @@ body, html {
     color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #222;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-/* Other styles for your main content */
+/* Main content styles */
 main {
-    padding: 20px;
-    padding-bottom: 80px; /* Ensure space above footer */
+    padding: 40px 20px; /* Increased vertical padding */
 }
 
+h1 {
+    font-size: 3rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    font-size: 1.6rem; /* Adjusted font size for paragraphs */
+    margin-bottom: 30px; /* Space below paragraphs */
+}
+
+/* Button styles */
 .buttons, .social-buttons {
     margin: 20px 0;
 }
 
 .buttons a, .social-buttons a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Increased padding */
     margin: 10px;
     background-color: #111;
     color: #61dafb;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.5rem; /* Adjusted font size */
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -135,9 +108,10 @@ main {
     color: #000;
 }
 
+/* Footer styles */
 .footer {
     background-color: #111;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     border-top: 1px solid #333;
     margin-top: 20px;
