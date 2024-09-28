@@ -1,17 +1,3 @@
-const navbarHTML = `
-    <nav class="navbar">
-        <a href="#" class="nav-logo">DeputyMods</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-        </div>
-    </nav>
-`;
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -22,7 +8,7 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
-// Close menu when a link is clicked
+// Close menu when clicking a link
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));

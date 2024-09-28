@@ -1,42 +1,122 @@
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
     height: 100%;
     background: #000;
     color: #61dafb;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    box-sizing: border-box;
 }
-header {
-    padding: 20px;
-    background-color: #111;
-    color: #eaeaea;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #333;
-    z-index: 1000;
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #222;
 }
-header img {
-    border-radius: 50%;
-    max-width: 150px;
-    height: auto;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
 }
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #222;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Other styles for your main content */
 main {
     padding: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 80px; /* Ensure space above footer */
 }
-.approval {
-    margin: 30px 0;
-    text-align: center;
-}
-.approval img {
-    max-width: 500px;
-    height: auto;
-}
+
 .buttons, .social-buttons {
     margin: 20px 0;
 }
+
 .buttons a, .social-buttons a {
     display: inline-block;
     padding: 10px 20px;
@@ -49,45 +129,16 @@ main {
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .buttons a:hover, .social-buttons a:hover {
     background-color: #61dafb;
     color: #000;
 }
+
 .footer {
     background-color: #111;
     padding: 10px;
     text-align: center;
     border-top: 1px solid #333;
     margin-top: 20px;
-}
-
-/* Mobile and Tablet Support */
-@media only screen and (max-width: 768px) {
-    body, html {
-        font-size: 14px;
-    }
-    header img {
-        max-width: 100px;
-    }
-    .approval img {
-        max-width: 300px;
-    }
-    .buttons a, .social-buttons a {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-
-/* Mobile Devices */
-@media only screen and (max-width: 480px) {
-    header img {
-        max-width: 80px;
-    }
-    .approval img {
-        max-width: 250px;
-    }
-    .buttons a, .social-buttons a {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
 }

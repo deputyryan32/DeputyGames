@@ -7,12 +7,8 @@
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-    <!-- Include Navbar -->
-    <div id="navbar"></div>
+    <div id="navbar"></div> <!-- Placeholder for Navbar -->
 
-    <header>
-        <img src="https://i.ibb.co/T29dgFq/New-Deputy-Mods.png" alt="DeputyMods Logo">
-    </header>
     <main>
         <h1>Welcome to DeputyMods</h1>
         <p>Explore our latest mods and updates. We're dedicated to creating the best gaming experience for you.</p>
@@ -32,17 +28,22 @@
             <a href="https://discord.gg/XDp9ESbaXz" target="_blank">Discord</a>
         </div>
     </main>
+
     <footer class="footer">
         <p>&copy; 2024 DeputyMods. All rights reserved.</p>
     </footer>
     
-    <script src="Scripts/navbar.js"></script>
     <script>
         // Load Navbar
-        document.getElementById('navbar').innerHTML = `
-            <!-- Include navbar.html content here -->
-            ${document.getElementById('navbar').innerHTML}
-        `;
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+                // Include the script to activate the navbar functionality
+                const script = document.createElement('script');
+                script.src = 'Scripts/navbar.js';
+                document.body.appendChild(script);
+            });
     </script>
 </body>
 </html>
