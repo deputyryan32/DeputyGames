@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page - DeputyMods</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <header>
+        <h1>New Page Title</h1>
+    </header>
+    <main>
+        <p>Your content for the new page goes here.</p>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 DeputyMods. All rights reserved.</p>
+    </footer>
+    
+    <script src="Scripts/navbar.js"></script>
+    <script>
+        // Load Navbar
+        document.getElementById('navbar').innerHTML = `
+            ${document.getElementById('navbar').innerHTML}
+        `;
+    </script>
+</body>
+</html>
