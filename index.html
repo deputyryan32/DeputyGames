@@ -7,16 +7,35 @@
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-    <div id="navbar"></div> <!-- Placeholder for Navbar -->
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">DeputyMods</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <h1>Welcome to DeputyMods</h1>
         <p>Explore our latest mods and updates. We're dedicated to creating the best gaming experience for you.</p>
-        
-        <section class="approval">
-            <p>Our mods are Geoffrey_Gamer Approved!</p>
-            <img src="https://i.ibb.co/QQv87c0/1.png" alt="Geoffrey_Gamer Approved" class="gg-logo"> <!-- Added class -->
-        </section>
 
         <div class="buttons">
             <a href="https://www.deputycad.com/ourmods/fx">FX</a>
@@ -24,7 +43,6 @@
             <a href="https://www.deputycad.com/ourmods/stoptheped">StopThePed</a>
             <a href="https://www.deputycad.com/ourmods/grammarpolice">GrammarPolice</a>
         </div>
-
         <div class="social-buttons">
             <a href="https://www.tiktok.com/@deputymods" target="_blank">TikTok</a>
             <a href="https://www.youtube.com/@deputymods" target="_blank">YouTube</a>
@@ -35,18 +53,7 @@
     <footer class="footer">
         <p>&copy; 2024 DeputyMods. All rights reserved.</p>
     </footer>
-    
-    <script>
-        // Load Navbar
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-                // Include the script to activate the navbar functionality
-                const script = document.createElement('script');
-                script.src = 'Scripts/navbar.js';
-                document.body.appendChild(script);
-            });
-    </script>
+
+    <script src="Scripts/index.js"></script>
 </body>
 </html>
