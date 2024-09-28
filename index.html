@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeputyMods - Homepage</title>
-    <link rel="stylesheet" href="Styles/home.css"> <!-- Your home.css for styles -->
+    <link rel="stylesheet" href="Styles/index.css">
 </head>
+
 <body>
-    <div id="navbar-container"></div> <!-- Navbar will be injected here -->
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <header>
+        <img src="https://i.ibb.co/T29dgFq/New-Deputy-Mods.png" alt="DeputyMods Logo">
+    </header>
     <main>
         <h1>Welcome to DeputyMods</h1>
         <p>Explore our latest mods and updates. We're dedicated to creating the best gaming experience for you.</p>
@@ -30,6 +38,14 @@
     <footer class="footer">
         <p>&copy; 2024 DeputyMods. All rights reserved.</p>
     </footer>
-    <script src="Scripts/navbar.js"></script> <!-- Navbar JS -->
+
+    <script src="Scripts/navbar.js"></script>
+    <script>
+        // Load the navbar HTML
+        document.getElementById('navbar').innerHTML = `
+            ${navbarHTML}
+        `;
+    </script>
 </body>
+
 </html>
