@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #111;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.embed {
+    width: 400px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.embed:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.embed img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+}
+
+.embed .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.embed .content a {
+    text-decoration: none;
+    color: #ff5722;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.embed .content p {
+    margin: 0;
+    color: #b0b0b0;
+    font-size: 15px;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .embed {
+        width: 80%; /* Adjust embed width for tablets */
+    }
+    header h1 {
+        font-size: 24px; /* Adjust header font size */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .embed {
+        width: 90%; /* Adjust embed width for smaller screens */
+    }
+    header h1 {
+        font-size: 20px; /* Smaller header for mobile */
+    }
+    .embed .content p {
+        font-size: 13px; /* Smaller text for mobile */
+    }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px; /* Even smaller header for very small screens */
+    }
+    .embed {
+        width: 100%; /* Full width on very small screens */
+    }
+    .embed .content p {
+        font-size: 12px; /* Smaller text for very small screens */
+    }
+}
