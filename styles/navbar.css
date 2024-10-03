@@ -1,51 +1,49 @@
-.navbar-overlay {
+#navbar {
+    display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 250px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none; /* Initially hidden */
-    z-index: 2000; /* Above other content */
-}
-
-.navbar-content {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #222;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
-.navbar-content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+#navbar.active {
+    display: block;
+    transform: translateX(0);
 }
 
-.navbar-content ul li {
-    margin: 10px 0;
-}
-
-.navbar-content ul li a {
-    text-decoration: none;
-    color: #eaeaea;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.navbar-content ul li a:hover {
-    color: #ff5722; /* Change color on hover */
-}
-
-.close-btn {
-    cursor: pointer;
+#navbar button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
     font-size: 30px;
-    color: #eaeaea;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#navbar nav {
+    margin-top: 60px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 20px 0;
+}
+
+#navbar ul li a {
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
 }

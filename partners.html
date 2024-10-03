@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeputyMods Partners</title>
     <link rel="stylesheet" href="styles/partners.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
 </head>
 <body>
     <header>
@@ -41,9 +41,9 @@
 
     <div id="navbar-container"></div>
 
-    <script src="scripts/navbar.js"></script>
+    <script src="navbar/navbar.js"></script>
     <script>
-        fetch('navbar.html')
+        fetch('navbar/navbar.html')
             .then(response => {
                 if (!response.ok) throw new Error('Failed to fetch navbar');
                 return response.text();
