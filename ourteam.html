@@ -4,58 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - DeputyMods</title>
-    <link rel="stylesheet" href="styles/ourteam.css"> <!-- Link to our team CSS -->
-    <link rel="stylesheet" href="styles/navbar.css"> <!-- Link to navbar CSS -->
-    <script src="scripts/navbar.js" defer></script> <!-- Link to navbar JS -->
+    <link rel="stylesheet" href="styles/ourteam.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
     <header>
-        <div id="navbar">
-            <span class="open-btn" onclick="openNavbar()">&#9776;</span> <!-- Hamburger icon -->
-        </div>
         <h1>Our Team</h1>
+        <button onclick="openNavbar()">☰</button>
     </header>
-
-    <!-- Include Navbar -->
-    <div id="navbar-container"></div> <!-- Empty container for navbar -->
-
-    <main>
-        <div class="embed">
-            <a href="https://discord.gg/XDp9ESbaXz" target="_blank">
-                <img src="https://i.ibb.co/R3q4V2c/Deputy-Ryan.webp" alt="DeputyRyan">
-            </a>
-            <div class="content">
-                <a href="https://discord.gg/XDp9ESbaXz" target="_blank">DeputyRyan</a>
-                <p>Owner of DeputyMods. Known for creating engaging mods and managing the server.</p>
+    
+    <div id="content">
+        <main>
+            <div class="embed">
+                <a href="https://discord.gg/XDp9ESbaXz" target="_blank">
+                    <img src="https://i.ibb.co/R3q4V2c/Deputy-Ryan.webp" alt="DeputyRyan">
+                </a>
+                <div class="content">
+                    <a href="https://discord.gg/XDp9ESbaXz" target="_blank">DeputyRyan</a>
+                    <p>Owner of DeputyMods. Known for creating engaging mods and managing the server.</p>
+                </div>
             </div>
-        </div>
-        <div class="embed">
-            <a href="https://discord.gg/XDp9ESbaXz" target="_blank">
-                <img src="https://i.ibb.co/NnMm4F8/NickD.webp" alt="NickD">
-            </a>
-            <div class="content">
-                <a href="https://discord.gg/XDp9ESbaXz" target="_blank">NickD</a>
-                <p>Owner of DeputyMods. Contributes to the development and design of mods.</p>
+            <div class="embed">
+                <a href="https://discord.gg/XDp9ESbaXz" target="_blank">
+                    <img src="https://i.ibb.co/NnMm4F8/NickD.webp" alt="NickD">
+                </a>
+                <div class="content">
+                    <a href="https://discord.gg/XDp9ESbaXz" target="_blank">NickD</a>
+                    <p>Owner of DeputyMods. Contributes to the development and design of mods.</p>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2024 DeputyMods. All rights reserved.</p>
-    </footer>
+        </main>
+    </div>
 
+    <div id="navbar-container"></div>
+
+    <script src="scripts/navbar.js"></script>
     <script>
-        // Load the navbar after the DOM has loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            fetch('navbar.html')
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok.');
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error fetching the navbar:', error));
-        });
+        fetch('navbar.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to fetch navbar');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error(error));
     </script>
 </body>
 </html>
