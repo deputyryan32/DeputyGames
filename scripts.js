@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Updated list of game folders, only referencing index.html
     const games = [
         { name: "Flappy Bird", path: "flappy_bird/index.html" },
-        { name: "hartwig_chess", path: "hartwig_chess/index.html" }  // Add your new game here
+        { name: "javascript_snake", path: "javascript_snake/index.html" },
+        { name: "snake", path: "snake/index.html" },
+        { name: "snake_game", path: "snake_game/docs/index.html" },
+        { name: "backbone", path: "backbone/index.html" }
         // Add more games as needed
     ];
 
