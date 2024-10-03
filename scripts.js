@@ -3,14 +3,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const gamesList = document.getElementById("games");
 
-    // Simulated list of game folders (this would normally come from a server)
+    // Updated list of game folders, only referencing index.html
     const games = [
         { name: "Flappy Bird", path: "flappy_bird/index.html" },
-        { name: "3D Hartwig Chess", path: "hartwig_chess/index.html"}
-        // You can add more games here
+        { name: "hartwig_chess", path: "hartwig_chess/index.html" }  // Add your new game here
+        // Add more games as needed
     ];
 
-    // Dynamically create list items for each game folder
+    // Create list items for each game
     games.forEach(game => {
         const li = document.createElement("li");
         li.innerHTML = `<a href="${game.path}">${game.name}</a>`;
