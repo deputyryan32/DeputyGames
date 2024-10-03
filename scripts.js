@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Simulated list of game folders (this would normally come from a server)
     const games = [
-        { name: "Flappy Bird", path: "flappy_bird/index.html" }
+        { name: "Flappy Bird", path: "flappy_bird/index.html" },
+        { name: "3D Hartwig Chess", path: "hartwig_chess/index.html"}
         // You can add more games here
     ];
 
